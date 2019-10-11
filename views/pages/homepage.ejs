@@ -1,0 +1,37 @@
+<html>
+<title>BMI Calculator</title>
+<head>
+<style>
+body{
+  background-color: #E0FFFF;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+}
+.text {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+  <center>
+    <h2>Calculate your BMI</h2>
+  </center>
+  <br>
+  <form action = "http://localhost:8081/getBMI" method = "GET">
+         <center><b>Enter Weight (in Kilos):</b> <input type = "text" class="text" size = "10" name = "weight">
+         </center>  <br><br>
+         <center><b>Enter Height(in meters):</b> <input type = "text" class="text" size = "10" name = "height">
+         </center><br><br>
+         <center><input type = "submit" class="button" value = "Submit"></center>
+  </form>
+</body>
+</html>
